@@ -1,0 +1,64 @@
+{
+  "name": "DigiResa",
+  "windowtitle": "DigiResa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "GITHUB_TOKEN": "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",
+  "author": {
+    "name": "Esteban Gourdou",
+    "email": "bonjour@digiresa.com"
+  },
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
+  },
+  "build": {
+    "appId": "digiresa.france.version",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "icon": "build/icon.icns"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "build/icons/"
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
+    }
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.5",
+    "@electron-forge/maker-deb": "^6.0.5",
+    "@electron-forge/maker-rpm": "^6.0.5",
+    "@electron-forge/maker-squirrel": "^6.0.5",
+    "@electron-forge/maker-zip": "^6.0.5",
+    "@electron-forge/publisher-github": "^6.0.5",
+    "electron": "^23.1.1",
+    "electron-installer-dmg": "^4.0.0"
+  },
+  "dependencies": {
+    "@electron-forge/maker-dmg": "^6.0.5",
+    "@electron-forge/maker-wix": "^6.0.5",
+    "electron-squirrel-startup": "^1.0.0",
+    "update-electron-app": "^2.0.1"
+  }
+}
