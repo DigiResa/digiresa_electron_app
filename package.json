@@ -2,8 +2,9 @@
   "name": "DigiResa",
   "windowtitle": "DigiResa",
   "version": "1.0.0",
-  "description": "",
+  "description": "Outil de gestion de réservation.",
   "main": "main.js",
+  "repository": "DigiResa/digiesa_electron_app",
   "GITHUB_TOKEN": "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",
   "author": {
     "name": "Esteban Gourdou",
@@ -59,6 +60,7 @@
     "@electron-forge/maker-dmg": "^6.0.5",
     "@electron-forge/maker-wix": "^6.0.5",
     "electron-squirrel-startup": "^1.0.0",
+    "macos-alias": "^0.2.11",
     "update-electron-app": "^2.0.1"
   }
 }
