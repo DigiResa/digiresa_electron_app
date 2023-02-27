@@ -1,5 +1,16 @@
 module.exports = {
   publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'DigiResa',
+          name: 'digiesa_electron_app',
+        },
+        prerelease: false,
+        draft: true,
+      },
+    },
   ],
   packagerConfig: {
     icon: './build/icon'
